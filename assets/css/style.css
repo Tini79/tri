@@ -81,3 +81,10 @@ button:hover {
 .round {
   border-radius: 50%;
 }
+.font-size{
+    font-size: 22px;
+    padding-top: 30px;
+}
+.p-top-30{
+    padding-top: 40px;
+}
