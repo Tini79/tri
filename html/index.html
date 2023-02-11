@@ -15,7 +15,7 @@
   <body>
     <header>
       <nav class="navbar navbar-expand-lg navbar-light fixed-top">
-        <div class="container-fluid">
+        <div class="container-fluid navbar-container">
           <a class="navbar-brand" href="#">
             <img src="../assets/images/logolands.png" width="130"  alt="Seventeen" />
           </a>
@@ -30,16 +30,11 @@
           >
             <span class="navbar-toggler-icon"></span>
           </button>
-          <div
-            class="collapse navbar-collapse justify-content-end"
-            id="navbarSupportedContent"
-          >
+          <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent" >
             <div class="d-flex">
               <ul class="navbar-nav me-auto mb-2 mb-lg-0 row">
                 <li class="nav-item col">
-                  <a class="nav-link active text-white" aria-current="page" href="#"
-                    >Home</a
-                  >
+                  <a class="nav-link active text-white" aria-current="page" href="#" >Home</a>
                 </li>
                 <li class="nav-item col">
                   <a class="nav-link text-white" href="#">About</a>
@@ -56,126 +51,120 @@
     <section>
       <div id="carousel" class="carousel mb-5">
         <img src="../assets/images/svt1.jpeg" alt="">
-        <!-- <img src="../assets/images/svt2.jpeg" alt="">
-        <img src="../assets/images/svt2.jpeg" alt=""> -->
       </div>
     </section>
     <section>
-      <div class="p-5">
-        <div class="text-center mb-5">
-          <h1>Seventeen Leaders</h1>
-        </div>
-        <!-- leader image -->
-        <div class="text-center">
-          <div class="d-inline">
-            <img class="w-25 mr-120" src="../assets/images/scoups.jpg" alt="">
+      <div class="section">
+        <div class="p-5">
+          <div class="text-center mb-5">
+            <h1>Seventeen Leaders</h1>
           </div>
-          <div class="d-inline">
-            <img class="w-25 mr-120" src="../assets/images/woozi.png" alt="">
-          </div>
-          <div class="d-inline">
-            <img class="w-25" src="../assets/images/maung.jpg" alt="">
+          <!-- leader image -->
+          <div class="row justify-content-center">
+            <img class="col-2 col-lg-3 col-sm-3 leader-img" src="../assets/images/scoups.jpg" alt="S. Coups">
+            <img class="col-2 col-lg-3 col-sm-3 leader-img" src="../assets/images/woozi.png" alt="Woozi">
+            <img class="col-2 col-lg-3 col-sm-3 leader-img" src="../assets/images/maung.jpg" alt="Hoshi">
+            <img class="col-2 col-lg-3 col-sm-3 leader-img" src="../assets/images/dokyeom.png" alt="">
           </div>
         </div>
-      </div>
-      <div class="p-5">
-        <div class="text-center mb-5">
-          <h1>Seventeen Lines</h1>
-        </div>
-         <div class="text-center">
-          <div class="d-inline">
-            <img class="line-img mr-100" src="../assets/images/95lines.jpg" alt="">
+        <div class="p-5">
+          <div class="text-center mb-5">
+            <h1>Seventeen Lines</h1>
           </div>
-          <div class="d-inline">
-            <img class="line-img mr-100" src="../assets/images/96lines.jpeg" alt="">
-          </div>
-          <div class="d-inline">
-            <img class="line-img mr-100" src="../assets/images/97line.jpeg" alt="">
-          </div>
-          <div class="d-inline">
-            <img class="line-img" src="../assets/images/maknaelines.jpeg" alt="">
+          <div class="row justify-content-center gap-1">
+            <img class="col-2 col-lg-3 col-sm-3 line-img" src="../assets/images/95lines.png" alt="95 Lines">
+            <img class="col-2 col-lg-3 col-sm-3 line-img" src="../assets/images/96lines.png" alt="96 Lines">
+            <img class="col-2 col-lg-3 col-sm-3 line-img" src="../assets/images/97line.png" alt="97 Lines">
+            <img class="col-2 col-lg-3 col-sm-3 line-img" src="../assets/images/maknaelines.png" alt="Maknae Lines">
           </div>
         </div>
-      </div>
-      <!-- video -->
-      <div>
-        
-        </video>
-      </div>
-      <div class="p-5">
-        <div class="text-center mb-5">
-          <h1>Seventeen's Producer</h1>
+        <!-- video -->
+        <div>
+          
         </div>
-         <div class="text-center">
-          <div class="d-inline">
+        <!-- producer -->
+        <div class="p-5">
+          <div class="text-center mb-5">
+            <h1>Seventeen's Producer</h1>
+          </div>
+          <div class="row">
+            <div class="col-5 col-lg-5 col-sm-5">
+              <h4>Lee Jihoon A.K.A Woozi</h4>
+              <p>He is the album producer. He decides the concept, makes the songs, writes the lyrics, and thinks about what order they should go in.</p>
+            </div>
+            <div class="col-7 col-lg-7 col-sm-7">
+              <div class="d-flex justify-content-end">
+                <img src="../assets/images/jiun.png" class="w-75" alt="">
+              </div>
+            </div>
           </div>
         </div>
-      </div>
-      <!-- quotes slide show -->
-      <div class="quotes p-5">
-        <div class="text-center mb-5">
-          <h1>Seventeen's Quotes</h1>
+        <!-- quotes slide show -->
+        <div class="p-5">
+          <div class="text-center mb-5">
+            <h1>Seventeen's Quotes</h1>
+          </div>
+          <div class="position-relative">
+            <div id="slides-container" class="quotes">
+              <img src="../assets/images/scoupsmind.png" class="slider-img" alt="">
+            </div>
+            <div class="position-absolute slider-btn w-100">
+              <div class="d-flex justify-content-between">
+                <button type="button" class="previous round" onclick="prev()">&#8249;</button>
+                <button type="button" class="next round" onclick="next()">&#8250;</button>
+              </div>
+            </div>
+          </div>
         </div>
-        <img src="../assets/images/scoupsmind.png" alt="">
-        <img src="../assets/images/jeonghanmind.png" alt="">
-        <img src="../assets/images/joshuamind.png" alt="">
-        <img src="../assets/images/junmind.png" alt="">
-        <img src="../assets/images/hoshimind.png" alt="">
-        <img src="../assets/images/wonwoomind.png" alt="">
-        <img src="../assets/images/woozimind.png" alt="">
-        <img src="../assets/images/the8mind.png" alt="">
-        <img src="../assets/images/mingyumind.png" alt="">
-        <img src="../assets/images/dkmind.png" alt="">
-        <img src="../assets/images/seungkwanmind.png" alt="">
-        <img src="../assets/images/vernonmind.png" alt="">
-        <img src="../assets/images/dinomind.png" alt="">
       </div>
     </section>
     <!-- contact us -->
     <footer id="footer">
-      <div class="p-5">
-        <h4 class="footer-text">Contact Me</h4>
-        <div class="row mt-5">
-          <div class="col-5">
-            <form action="" class="">
-              <div class="mb-3">
-                <div>
-                  <label class="form-label" for="yourName">Your Name</label>
-                </div>
-                <input class="form-control" id="yourName" type="text">
-              </div>
-              <div class="mb-3">
-                <div>
-                  <label class="form-label" for="yourEmail">Your Email</label>
-                </div>
-                <input class="form-control" id="yourEmail" type="email">
-              </div>
-              <div class="mb-3">
-                <div>
-                  <label class="form-label" for="yourMessage">Your Message</label>
-                </div>
-                <textarea class="form-control" id="yourMessage" rows="3"></textarea>
-              </div>
-              <button class="btn btn-footer">Submit</button>
-            </form>
-          </div>
-          <div class="col">
-            <div class="d-flex justify-content-end">
-              <div>
+      <div class="footer">
+        <div class="p-5">
+          <h4 class="footer-text">Contact Me</h4>
+          <div class="row mt-5">
+            <div class="col-5">
+              <form action="" class="">
                 <div class="mb-3">
-                  <a href="https://twitter.com/pledis_17?t=BDtmaSdCMvbzvKTaELKUoQ&s=09" target="blank">
-                    <i class="fa-2xl fa-brands fa-twitter"></i>
-                  </a>
+                  <div>
+                    <label class="form-label" for="yourName">Your Name</label>
+                  </div>
+                  <input class="form-control" id="yourName" type="text">
                 </div>
                 <div class="mb-3">
-                  <a href="https://instagram.com/tri997_?igshid=ZDdkNTZiNTM=" target="blank">
-                    <i class="fa-2xl fa-brands fa-instagram"></i>
-                  </a>
+                  <div>
+                    <label class="form-label" for="yourEmail">Your Email</label>
+                  </div>
+                  <input class="form-control" id="yourEmail" type="email">
                 </div>
                 <div class="mb-3">
-                  <a href="https://www.facebook.com/seventeennews?mibextid=ZbWKwL" target="blank">
-                    <i class="fa-2xl fa-brands fa-facebook"></i>
-                  </a>
+                  <div>
+                    <label class="form-label" for="yourMessage">Your Message</label>
+                  </div>
+                  <textarea class="form-control" id="yourMessage" rows="3"></textarea>
+                </div>
+                <button class="btn btn-footer">Submit</button>
+              </form>
+            </div>
+            <div class="col">
+              <div class="d-flex justify-content-end">
+                <div>
+                  <div class="mb-5">
+                    <a href="https://twitter.com/pledis_17?t=BDtmaSdCMvbzvKTaELKUoQ&s=09" target="blank">
+                      <i class="fa-2xl fa-brands fa-twitter"></i>
+                    </a>
+                  </div>
+                  <div class="mb-5">
+                    <a href="https://instagram.com/tri997_?igshid=ZDdkNTZiNTM=" target="blank">
+                      <i class="fa-2xl fa-brands fa-instagram"></i>
+                    </a>
+                  </div>
+                  <div class="mb-5">
+                    <a href="https://www.tiktok.com/@seventeen17_official?_t=8ZdputpREWI&_r=1 " target="blank">
+                      <i class="fa-2xl fa-brands fa-tiktok"></i>
+                    </a>
+                  </div>
                 </div>
               </div>
             </div>

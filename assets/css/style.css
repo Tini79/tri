@@ -9,6 +9,12 @@
 body {
     background-color: #000;
 }
+.section, .footer {
+    margin: auto 20px;
+}
+.navbar-container {
+    margin: auto 50px;
+}
 p, a, h1, h2, h3, h4, h5 {
     color: #FFF;
     font-family: cute;
@@ -17,15 +23,20 @@ label, .footer-text {
     color: #000;
     font-family: cute;
 }
-.mr-120{
-    margin-right: 120px;
+/* images */
+.leader-img {
+    border-radius: 20px;
+    width: 25%;
 }
-.mr-100{
-    margin-right: 100px;
+.line-img {
+    width: 20%;
 }
-.line-img{
-    height: 210px;
-    width: 210px;
+.gap-1 {
+    gap: 3rem !important;
+}
+.leader-img:hover, .line-img:hover {
+    transform: scale(1.1);
+    cursor: pointer; 
 }
 .carousel>img{
     width: 100%;
@@ -40,4 +51,33 @@ footer{
 
 .btn-footer, input, textarea{
     background-color: #F7CAC9;
+}
+video{
+    width: 1250px;
+    height: 309px;
+}
+/* button */
+button {
+  text-decoration: none;
+  display: inline-block;
+  padding: 8px 18px 12px 18px;
+  border: none;
+  display: flex;
+  align-items: center;
+}
+button:hover {
+  transform: scale(1);
+  cursor: pointer;
+  border: 1px solid #c5b9cd;
+  background-color: transparent;
+}
+.slider-btn {
+    top: 250px;
+}
+.next, .previous {
+  background-color: #c5b9cd;
+  color: white;
+}
+.round {
+  border-radius: 50%;
 }
