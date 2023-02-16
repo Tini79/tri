@@ -91,3 +91,6 @@ button:hover {
 .ml-110{
     margin-left: 110px;
 }
+.link-color:hover{
+    color: pink;
+}
