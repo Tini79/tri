@@ -20,3 +20,9 @@ function next() {
 function setImage() {
     return sliderImg.setAttribute("src", "../assets/images/" + images[i]);
 }
+
+window.addEventListener("scroll", function () {
+    const navbar = document.querySelector(".navbar");
+    navbar.classList.toggle("blur", window.scrollY > 0);
+});
+
