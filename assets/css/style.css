@@ -17,6 +17,24 @@
 body {
     background-color: #000;
 }
+/* menu nav
+nav{
+    display: flex;
+    background-color: transparent;
+    justify-content: space-around;
+    height: 50px;
+    align-items: center;
+}
+nav ul{
+    display: flex;
+    list-style: none;
+    width: 20%;
+    justify-content: space-between;
+}
+
+nav ul li a{
+    text-decoration: none;
+} */
 .section, .footer {
     margin: auto 20px;
 }
@@ -29,8 +47,14 @@ body {
 .navbar-container {
     margin: auto 50px;
 }
+.nav-item a{
+    color: #95B2FF !important;
+}
+.nav-item a:hover{
+    color: pink !important;
+}
 p, a, h1, h2, h3, h4, h5 {
-    color: #FFF;
+    color: #95B2FF;
     font-family: cute;
 }
 label, .footer-text {
@@ -70,7 +94,6 @@ label, .footer-text {
 footer{
     background-color: #95B2FF;
 }
-
 .btn-footer, input, textarea{
     background-color: #F7CAC9;
 }

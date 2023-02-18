@@ -26,3 +26,9 @@ window.addEventListener("scroll", function () {
     navbar.classList.toggle("blur", window.scrollY > 0);
 });
 
+// const menuToggle = document.querySelector('.menu-toggle input');
+// const nav = document.querySelector('nav ul');
+
+// menuToggle.addEventListener('click', function () {
+//     nav.classList.toggle('slide')
+// });
