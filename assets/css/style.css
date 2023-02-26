@@ -58,7 +58,6 @@ label, .footer-text {
     color: #000;
     font-family: cute;
 }
-
 .box{
     background-color: rgba(0, 0, 0, 0.578); 
     top: 50%; 
@@ -184,16 +183,22 @@ button:hover {
 .link-color:hover{
     color: pink;
 }
+.link-color{
+    color: white;
+}
 @media only screen and (max-width: 992px) {
     .mobile-navbar {
         display: flex;
         justify-content: end;
     }    
     #navbarNav {
-        background-color: #fff;
+        background-color: #0000008a;
     }
     .container-fluid {
         padding: 0px;
+    }
+    .nav-link{
+        margin: 30px;
     }
 }
 @media only screen and (min-width: 993px) {
@@ -206,4 +211,120 @@ button:hover {
         width: 20%;
         margin-right: 5px;
     }    
+}
+@media screen and (min-width: 320px) {
+    .slider-btn{
+        top: 20px;
+    }
+    .button-w{
+        width: 5px;
+        height: 40px;
+    }
+    .font-size{
+        font-size: 10px;
+        padding-top: 15px;
+    }
+    .p-top-30{
+        font-size: 15px;
+    }
+}
+@media screen and (min-width: 400px) {
+    .slider-btn{
+        top: 30px;
+    }
+    .button-w{
+        width: 5px;
+        height: 40px;
+    }
+}
+@media screen and (min-width: 500px) {
+    .slider-btn{
+        top: 50px;
+    }
+    .button-w{
+        width: 30px;
+        height: 40px;
+    }
+    .p-top-30{
+        font-size: 20px;
+    }
+}
+@media screen and (min-width: 600px) {
+    .slider-btn{
+        top: 100px;
+    }
+    .button-w{
+        width: 40px;
+        height: 40px;
+    }
+    .font-size{
+        font-size: 15px;
+        padding-top: 20px;
+    }
+    .p-top-30{
+        font-size: 25px;
+    }
+}
+@media screen and (min-width: 760px) {
+    .slider-btn{
+        top: 150px;
+    }
+    .button-w{
+        width: 45px;
+        height: 45px;
+    }
+    .font-size{
+        font-size: 15px;
+        padding-top: 25px;
+    }
+    .p-top-30{
+        font-size: 30px;
+    }
+}
+@media screen and (min-width: 860px) {
+    .slider-btn{
+        top: 150px;
+    }
+    .button-w{
+        width: 50px;
+        height: 50px;
+    }
+    .font-size{
+        font-size: 15px;
+        padding-top: 30px;
+    }
+    .p-top-30{
+        font-size: 35px;
+    }
+}
+@media screen and (min-width: 950px) {
+    .slider-btn{
+        top: 150px;
+    }
+    .button-w{
+        width: 50px;
+        height: 50px;
+    }
+    .font-size{
+        font-size: 18px;
+    }
+    .p-top-30{
+        font-size: 35px;
+    }
+}
+@media screen and (min-width: 1000px) {
+    .slider-btn{
+        top: 210px;
+    }
+    .button-w{
+        width: 55px;
+        height: 55px;
+    }
+    .font-size{
+        font-size: 23px;
+        padding-top: 35px;
+    }
+    .p-top-30{
+        font-size: 40px;
+    }
 }
