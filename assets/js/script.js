@@ -32,3 +32,29 @@ window.addEventListener("scroll", function () {
 // menuToggle.addEventListener('click', function () {
 //     nav.classList.toggle('slide')
 // });
+
+// uji
+const slides = document.querySelectorAll('.slides img');
+
+let currentSlide = 0;
+
+function showSlide(n) {
+    slides[currentSlide].className = ' ';
+    slides[n].className = 'active';
+    currentSlide = n;
+}
+
+function nextSlide() {
+    let next = currentSlide + 1;
+    if (next >= slides.length) {
+        next = 0;
+    }
+    slides[next].className = 'next';
+    setTimeout(function () {
+        slides[currentSlide].className = 'prev';
+        slides[next].className = 'active';
+        currentSlide = next;
+    }, 100);
+}
+
+setInterval(nextSlide, 3000);

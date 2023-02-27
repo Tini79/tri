@@ -137,6 +137,7 @@ label, .footer-text {
 .slide:first-child img {
   display: block;
 }
+
 /* producer */
 .p-top-30{
     padding-top: 40px;
@@ -328,3 +329,4 @@ button:hover {
         font-size: 40px;
     }
 }
+
