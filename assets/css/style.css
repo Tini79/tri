@@ -58,21 +58,6 @@ label, .footer-text {
     color: #000;
     font-family: cute;
 }
-.box{
-    background-color: rgba(0, 0, 0, 0.578); 
-    top: 50%; 
-    left: 5%; 
-    max-width: 30%;
-    padding: 10px 20px 10px;
-    border-radius: 35px;
-    height: 130px;
-    display: flex;
-    padding-top: 10px;
-}
-.box-2{
-    display: flex;
-    align-items: center;
-}
 .font-size-20{
     font-size: 20px;
     text-align: justify;
@@ -137,7 +122,6 @@ label, .footer-text {
 .slide:first-child img {
   display: block;
 }
-
 /* producer */
 .p-top-30{
     padding-top: 40px;
@@ -152,10 +136,6 @@ footer{
 .btn-footer, input, textarea{
     background-color: #F7CAC9;
 }
-/* video{
-    width: 1000px; 
-    height: 450px;
-} */
 /* button */
 button {
   text-decoration: none;
@@ -187,6 +167,31 @@ button:hover {
 .link-color{
     color: white;
 }
+
+/* text image */
+.image-container {
+  position: relative;
+  display: inline-block;
+}
+.caption {
+  position: absolute;
+  background-color: #000000a1;
+  width: 312px;
+  top: 352px;
+  left: 152.5px;
+  transform: translate(-50%, -50%);
+  opacity: 0;
+  transition: opacity 0.5s ease;
+  border-radius: 0 0 20px 20px;
+}
+.align-text{
+    text-align: center;
+}
+.image-container:hover .caption {
+  opacity: 1;
+}
+
+/* responsif */
 @media only screen and (max-width: 992px) {
     .mobile-navbar {
         display: flex;
