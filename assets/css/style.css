@@ -122,6 +122,12 @@ label, .footer-text {
 .slide:first-child img {
   display: block;
 }
+/* .carousel-control-prev{
+    top: 250px;
+}
+.carousel-control-next{
+    top: 250px;
+} */
 /* producer */
 .p-top-30{
     padding-top: 40px;
@@ -219,13 +225,6 @@ button:hover {
     }    
 }
 @media screen and (min-width: 320px) {
-    .slider-btn{
-        top: 20px;
-    }
-    .button-w{
-        width: 5px;
-        height: 40px;
-    }
     .font-size{
         font-size: 10px;
         padding-top: 15px;
@@ -233,36 +232,62 @@ button:hover {
     .p-top-30{
         font-size: 15px;
     }
+    .carousel-control-prev{
+    top: 40px;
+    width: 35px;
+    height: 35px;
+    }
+    .carousel-control-next{
+    top: 40px;
+    width: 35px;
+    height: 35px;
+    }
+    .carousel-control-prev-icon{
+    width: 20px;
+    height: 20px;
+    }
+    .carousel-control-next-icon{
+    width: 20px;
+    height: 20px;
+    }
 }
 @media screen and (min-width: 400px) {
-    .slider-btn{
-        top: 30px;
+        .carousel-control-prev{
+    top: 70px;
+    width: 35px;
+    height: 35px;
     }
-    .button-w{
-        width: 5px;
-        height: 40px;
+    .carousel-control-next{
+    top: 70px;
+    width: 35px;
+    height: 35px;
     }
+
 }
 @media screen and (min-width: 500px) {
-    .slider-btn{
-        top: 50px;
-    }
-    .button-w{
-        width: 30px;
-        height: 40px;
-    }
     .p-top-30{
         font-size: 20px;
     }
+    .carousel-control-prev{
+    top: 90px;
+    width: 40px;
+    height: 40px;
+    }
+    .carousel-control-next{
+    top: 90px;
+    width: 40px;
+    height: 40px;
+    }
+    .carousel-control-prev-icon{
+    width: 30px;
+    height: 30px;
+    }
+    .carousel-control-next-icon{
+    width: 30px;
+    height: 30px;
+    }
 }
 @media screen and (min-width: 600px) {
-    .slider-btn{
-        top: 100px;
-    }
-    .button-w{
-        width: 40px;
-        height: 40px;
-    }
     .font-size{
         font-size: 15px;
         padding-top: 20px;
@@ -270,15 +295,18 @@ button:hover {
     .p-top-30{
         font-size: 25px;
     }
+    .carousel-control-prev{
+    top: 100px;
+    width: 50px;
+    height: 50px;
+    }
+    .carousel-control-next{
+    top: 100px;
+    width: 50px;
+    height: 50px;
+    }
 }
 @media screen and (min-width: 760px) {
-    .slider-btn{
-        top: 150px;
-    }
-    .button-w{
-        width: 45px;
-        height: 45px;
-    }
     .font-size{
         font-size: 15px;
         padding-top: 25px;
@@ -286,15 +314,26 @@ button:hover {
     .p-top-30{
         font-size: 30px;
     }
+    .carousel-control-prev{
+    top: 100px;
+    width: 60px;
+    height: 60px;
+    }
+    .carousel-control-next{
+    top: 100px;
+    width: 60px;
+    height: 60px;
+    }
+    .carousel-control-prev-icon{
+    width: 35px;
+    height: 35px;
+    }
+    .carousel-control-next-icon{
+    width: 35px;
+    height: 35px;
+    }
 }
 @media screen and (min-width: 860px) {
-    .slider-btn{
-        top: 150px;
-    }
-    .button-w{
-        width: 50px;
-        height: 50px;
-    }
     .font-size{
         font-size: 15px;
         padding-top: 30px;
@@ -302,30 +341,28 @@ button:hover {
     .p-top-30{
         font-size: 35px;
     }
+    .carousel-control-prev{
+    top: 150px;
+    }
+    .carousel-control-next{
+    top: 150px;
+    }
 }
 @media screen and (min-width: 950px) {
-    .slider-btn{
-        top: 150px;
-    }
-    .button-w{
-        width: 50px;
-        height: 50px;
-    }
     .font-size{
         font-size: 18px;
     }
     .p-top-30{
         font-size: 35px;
     }
+    .carousel-control-prev{
+    top: 200px;
+    }
+    .carousel-control-next{
+    top: 200px;
+    }
 }
 @media screen and (min-width: 1000px) {
-    .slider-btn{
-        top: 210px;
-    }
-    .button-w{
-        width: 55px;
-        height: 55px;
-    }
     .font-size{
         font-size: 23px;
         padding-top: 35px;
@@ -333,5 +370,22 @@ button:hover {
     .p-top-30{
         font-size: 40px;
     }
+    .carousel-control-prev{
+    top: 230px;
+    width: 70px;
+    height: 70px;
+    }
+    .carousel-control-next{
+    top: 230px;
+    width: 70px;
+    height: 70px;
+    }
+    .carousel-control-prev-icon{
+    width: 50px;
+    height: 50px;
+    }
+    .carousel-control-next-icon{
+    width: 50px;
+    height: 50px;
+    }
 }
-
