@@ -70,8 +70,11 @@ label, .footer-text {
 }
 /* images */
 .leader-img {
-    border-radius: 20px;
-    width: 25%;
+  border-radius: 20px;
+  width: 225px;
+  height: 295px;
+  object-fit: cover;
+  margin-right: 10px;
 }
 .line-img {
     width: 20%;
@@ -145,27 +148,57 @@ button:hover {
 
 /* text image */
 .image-container {
-  position: relative;
-  display: inline-block;
+  padding-right: 20px;
 }
 .caption {
   position: absolute;
   background-color: #000000a1;
-  width: 312px;
-  top: 352px;
-  left: 152.5px;
-  transform: translate(-50%, -50%);
+  width: 250px;
+  height: 70px;
+  transform: translate(-5%, -50%);
+  top: 1100px;
   opacity: 0;
   transition: opacity 0.5s ease;
   border-radius: 0 0 20px 20px;
+  text-align: center; /* center-align the text */
+}
+.scoups {
+  top: 0;
+  left: 0;
+}
+
+.woozi {
+    top: 0;
+    right: 0;
+}
+
+.hoshi {
+  bottom: 0;
+  left: 0;
+}
+
+.dk {
+  bottom: 0;
+  right: 0;
+}
+
+.caption p {
+  color: #f7cac9;
+  margin: 0;
+  padding: 10px;
+}
+
+.image-container:hover .caption {
+  opacity: 1;
 }
 .align-text{
     text-align: center;
 }
-.image-container:hover .caption {
-  opacity: 1;
+.d-flex {
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
-
 /* responsif */
 @media only screen and (max-width: 992px) {
     .mobile-navbar {
@@ -219,6 +252,16 @@ button:hover {
     width: 20px;
     height: 20px;
     }
+    .leader-img{
+        width: 60px;
+        height: 85px;
+        border-radius: 10px;
+    }
+    .caption{
+        top: 550px;
+        width: 115px;
+        height: 35px;
+    }
 }
 @media screen and (min-width: 400px) {
         .carousel-control-prev{
@@ -231,7 +274,16 @@ button:hover {
     width: 35px;
     height: 35px;
     }
-
+    .leader-img{
+        width: 70px;
+        height: 95px;
+        border-radius: 10px;
+    }
+    .caption{
+        top: 550px;
+        width: 115px;
+        height: 45px;
+    }
 }
 @media screen and (min-width: 500px) {
     .p-top-30{
@@ -255,6 +307,16 @@ button:hover {
     width: 30px;
     height: 30px;
     }
+    .leader-img{
+        width: 100px;
+        height: 135px;
+        border-radius: 10px;
+    }
+    .caption{
+        top: 615px;
+        width: 135px;
+        height: 55px;
+    }
 }
 @media screen and (min-width: 600px) {
     .font-size{
@@ -273,6 +335,16 @@ button:hover {
     top: 100px;
     width: 50px;
     height: 50px;
+    }
+    .leader-img{
+        width: 120px;
+        height: 155px;
+        border-radius: 10px;
+    }
+    .caption{
+        top: 735px;
+        width: 168px;
+        height: 65px;
     }
 }
 @media screen and (min-width: 760px) {
@@ -301,6 +373,16 @@ button:hover {
     width: 35px;
     height: 35px;
     }
+    .leader-img{
+        width: 150px;
+        height: 185px;
+        border-radius: 10px;
+    }
+    .caption{
+        top: 840px;
+        width: 178px;
+        height: 65px;
+    }
 }
 @media screen and (min-width: 860px) {
     .font-size{
@@ -316,6 +398,11 @@ button:hover {
     .carousel-control-next{
     top: 150px;
     }
+    .leader-img{
+        width: 160px;
+        height: 210px;
+        border-radius: 10px;
+    }
 }
 @media screen and (min-width: 950px) {
     .font-size{
@@ -329,6 +416,16 @@ button:hover {
     }
     .carousel-control-next{
     top: 200px;
+    }
+    .leader-img{
+        width: 180px;
+        height: 230px;
+        border-radius: 10px;
+    }
+    .caption{
+        top: 880px;
+        width: 200px;
+        height: 70px;
     }
 }
 @media screen and (min-width: 1000px) {
@@ -356,5 +453,15 @@ button:hover {
     .carousel-control-next-icon{
     width: 50px;
     height: 50px;
+    }
+    .leader-img{
+        width: 225px;
+        height: 295px;
+        border-radius: 10px;
+    }
+    .caption{
+        top: 1100px;
+        width: 250px;
+        height: 80px;
     }
 }
