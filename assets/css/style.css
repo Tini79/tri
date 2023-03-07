@@ -17,24 +17,6 @@
 body {
     background-color: #000;
 }
-/* menu nav
-nav{
-    display: flex;
-    background-color: transparent;
-    justify-content: space-around;
-    height: 50px;
-    align-items: center;
-}
-nav ul{
-    display: flex;
-    list-style: none;
-    width: 20%;
-    justify-content: space-between;
-}
-
-nav ul li a{
-    text-decoration: none;
-} */
 .section, .footer {
     margin: auto 20px;
 }
@@ -199,6 +181,7 @@ button:hover {
   align-items: center;
   justify-content: center;
 }
+
 /* responsif */
 @media only screen and (max-width: 992px) {
     .mobile-navbar {
@@ -229,7 +212,7 @@ button:hover {
 @media screen and (min-width: 320px) {
     .font-size{
         font-size: 10px;
-        padding-top: 15px;
+        padding-top: 0px;
     }
     .p-top-30{
         font-size: 15px;
@@ -264,7 +247,7 @@ button:hover {
     }
 }
 @media screen and (min-width: 400px) {
-        .carousel-control-prev{
+    .carousel-control-prev{
     top: 70px;
     width: 35px;
     height: 35px;
@@ -288,6 +271,9 @@ button:hover {
 @media screen and (min-width: 500px) {
     .p-top-30{
         font-size: 20px;
+    }
+    h5{
+        font-size: 10px;
     }
     .carousel-control-prev{
     top: 90px;
@@ -313,9 +299,9 @@ button:hover {
         border-radius: 10px;
     }
     .caption{
-        top: 615px;
-        width: 135px;
-        height: 55px;
+        top: 573px;
+        width: 112px;
+        height: 60px;
     }
 }
 @media screen and (min-width: 600px) {
@@ -352,6 +338,9 @@ button:hover {
         font-size: 15px;
         padding-top: 25px;
     }
+    h5{
+        font-size: 15px;
+    }
     .p-top-30{
         font-size: 30px;
     }
@@ -379,9 +368,9 @@ button:hover {
         border-radius: 10px;
     }
     .caption{
-        top: 840px;
-        width: 178px;
-        height: 65px;
+        top: 720px;
+        width: 167px;
+        height: 83px;
     }
 }
 @media screen and (min-width: 860px) {
@@ -403,6 +392,11 @@ button:hover {
         height: 210px;
         border-radius: 10px;
     }
+    .caption{
+        top: 830px;
+        width: 180px;
+        height: 83px;
+    }
 }
 @media screen and (min-width: 950px) {
     .font-size{
@@ -423,15 +417,18 @@ button:hover {
         border-radius: 10px;
     }
     .caption{
-        top: 880px;
+        top: 870px;
         width: 200px;
-        height: 70px;
+        height: 80px;
     }
 }
 @media screen and (min-width: 1000px) {
     .font-size{
         font-size: 23px;
         padding-top: 35px;
+    }
+    h5{
+        font-size: 20px;
     }
     .p-top-30{
         font-size: 40px;
@@ -460,8 +457,8 @@ button:hover {
         border-radius: 10px;
     }
     .caption{
-        top: 1100px;
+        top: 1090px;
         width: 250px;
-        height: 80px;
+        height: 100px;
     }
 }
