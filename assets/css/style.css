@@ -17,30 +17,12 @@
 body {
     background-color: #000;
 }
-/* menu nav
-nav{
-    display: flex;
-    background-color: transparent;
-    justify-content: space-around;
-    height: 50px;
-    align-items: center;
-}
-nav ul{
-    display: flex;
-    list-style: none;
-    width: 20%;
-    justify-content: space-between;
-}
-
-nav ul li a{
-    text-decoration: none;
-} */
 .section, .footer {
     margin: auto 20px;
 }
 .navbar.blur{
     backdrop-filter: blur(5px);
-    transform: translateY(-20px);
+        transform: translateY(-20px);
     box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
     height: 75px;
 }
@@ -58,22 +40,6 @@ label, .footer-text {
     color: #000;
     font-family: cute;
 }
-
-.box{
-    background-color: rgba(0, 0, 0, 0.578); 
-    top: 50%; 
-    left: 5%; 
-    max-width: 30%;
-    padding: 10px 20px 10px;
-    border-radius: 35px;
-    height: 130px;
-    display: flex;
-    padding-top: 10px;
-}
-.box-2{
-    display: flex;
-    align-items: center;
-}
 .font-size-20{
     font-size: 20px;
     text-align: justify;
@@ -86,8 +52,11 @@ label, .footer-text {
 }
 /* images */
 .leader-img {
-    border-radius: 20px;
-    width: 25%;
+  border-radius: 20px;
+  width: 225px;
+  height: 295px;
+  object-fit: cover;
+  margin-right: 10px;
 }
 .line-img {
     width: 20%;
@@ -107,36 +76,11 @@ label, .footer-text {
     width: 100%;
     height: 500px;
 }
-.font-style{
-    font-family: signature;
-}
 .font{
     font-family: soda;
 }
 .font-color{
     color: black;
-}
-/* slideshow responsif */
-.slideshow {
-  position: relative;
-  max-width: 100%;
-  height: auto;
-}
-
-.slideshow img {
-  max-width: 100%;
-  height: auto;
-  display: none;
-}
-
-.slide {
-  /* position: absolute; */
-  top: 0;
-  left: 0;
-}
-
-.slide:first-child img {
-  display: block;
 }
 /* producer */
 .p-top-30{
@@ -152,10 +96,6 @@ footer{
 .btn-footer, input, textarea{
     background-color: #F7CAC9;
 }
-/* video{
-    width: 1000px; 
-    height: 450px;
-} */
 /* button */
 button {
   text-decoration: none;
@@ -175,7 +115,7 @@ button:hover {
     top: 250px;
 }
 .next, .previous {
-  background-color: #c5b9cd;
+  background-color: #92a8d1;
   color: white;
 }
 .round {
@@ -184,16 +124,78 @@ button:hover {
 .link-color:hover{
     color: pink;
 }
+.link-color{
+    color: white;
+}
+
+/* text image */
+.image-container {
+  padding-right: 20px;
+}
+.caption {
+  position: absolute;
+  background-color: #000000a1;
+  width: 250px;
+  height: 70px;
+  transform: translate(-5%, -50%);
+  top: 1100px;
+  opacity: 0;
+  transition: opacity 0.5s ease;
+  border-radius: 0 0 20px 20px;
+  text-align: center; /* center-align the text */
+}
+.scoups {
+  top: 0;
+  left: 0;
+}
+
+.woozi {
+    top: 0;
+    right: 0;
+}
+
+.hoshi {
+  bottom: 0;
+  left: 0;
+}
+
+.dk {
+  bottom: 0;
+  right: 0;
+}
+
+.caption p {
+  color: #f7cac9;
+  margin: 0;
+  padding: 10px;
+}
+
+.image-container:hover .caption {
+  opacity: 1;
+}
+.align-text{
+    text-align: center;
+}
+.d-flex {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* responsif */
 @media only screen and (max-width: 992px) {
     .mobile-navbar {
         display: flex;
         justify-content: end;
     }    
     #navbarNav {
-        background-color: #fff;
+        background-color: #0000008a;
     }
     .container-fluid {
         padding: 0px;
+    }
+    .nav-link{
+        margin: 30px;
     }
 }
 @media only screen and (min-width: 993px) {
@@ -206,4 +208,257 @@ button:hover {
         width: 20%;
         margin-right: 5px;
     }    
+}
+@media screen and (min-width: 320px) {
+    .font-size{
+        font-size: 10px;
+        padding-top: 0px;
+    }
+    .p-top-30{
+        font-size: 15px;
+    }
+    .carousel-control-prev{
+    top: 40px;
+    width: 35px;
+    height: 35px;
+    }
+    .carousel-control-next{
+    top: 40px;
+    width: 35px;
+    height: 35px;
+    }
+    .carousel-control-prev-icon{
+    width: 20px;
+    height: 20px;
+    }
+    .carousel-control-next-icon{
+    width: 20px;
+    height: 20px;
+    }
+    .leader-img{
+        width: 60px;
+        height: 85px;
+        border-radius: 10px;
+    }
+    .caption{
+        top: 550px;
+        width: 115px;
+        height: 35px;
+    }
+}
+@media screen and (min-width: 400px) {
+    .carousel-control-prev{
+    top: 70px;
+    width: 35px;
+    height: 35px;
+    }
+    .carousel-control-next{
+    top: 70px;
+    width: 35px;
+    height: 35px;
+    }
+    .leader-img{
+        width: 70px;
+        height: 95px;
+        border-radius: 10px;
+    }
+    .caption{
+        top: 550px;
+        width: 115px;
+        height: 45px;
+    }
+}
+@media screen and (min-width: 500px) {
+    .p-top-30{
+        font-size: 20px;
+    }
+    h5{
+        font-size: 10px;
+    }
+    .carousel-control-prev{
+    top: 90px;
+    width: 40px;
+    height: 40px;
+    }
+    .carousel-control-next{
+    top: 90px;
+    width: 40px;
+    height: 40px;
+    }
+    .carousel-control-prev-icon{
+    width: 30px;
+    height: 30px;
+    }
+    .carousel-control-next-icon{
+    width: 30px;
+    height: 30px;
+    }
+    .leader-img{
+        width: 100px;
+        height: 135px;
+        border-radius: 10px;
+    }
+    .caption{
+        top: 573px;
+        width: 112px;
+        height: 60px;
+    }
+}
+@media screen and (min-width: 600px) {
+    .font-size{
+        font-size: 15px;
+        padding-top: 20px;
+    }
+    .p-top-30{
+        font-size: 25px;
+    }
+    .carousel-control-prev{
+    top: 100px;
+    width: 50px;
+    height: 50px;
+    }
+    .carousel-control-next{
+    top: 100px;
+    width: 50px;
+    height: 50px;
+    }
+    .leader-img{
+        width: 120px;
+        height: 155px;
+        border-radius: 10px;
+    }
+    .caption{
+        top: 735px;
+        width: 168px;
+        height: 65px;
+    }
+}
+@media screen and (min-width: 760px) {
+    .font-size{
+        font-size: 15px;
+        padding-top: 25px;
+    }
+    h5{
+        font-size: 15px;
+    }
+    .p-top-30{
+        font-size: 30px;
+    }
+    .carousel-control-prev{
+    top: 100px;
+    width: 60px;
+    height: 60px;
+    }
+    .carousel-control-next{
+    top: 100px;
+    width: 60px;
+    height: 60px;
+    }
+    .carousel-control-prev-icon{
+    width: 35px;
+    height: 35px;
+    }
+    .carousel-control-next-icon{
+    width: 35px;
+    height: 35px;
+    }
+    .leader-img{
+        width: 150px;
+        height: 185px;
+        border-radius: 10px;
+    }
+    .caption{
+        top: 720px;
+        width: 167px;
+        height: 83px;
+    }
+}
+@media screen and (min-width: 860px) {
+    .font-size{
+        font-size: 15px;
+        padding-top: 30px;
+    }
+    .p-top-30{
+        font-size: 35px;
+    }
+    .carousel-control-prev{
+    top: 150px;
+    }
+    .carousel-control-next{
+    top: 150px;
+    }
+    .leader-img{
+        width: 160px;
+        height: 210px;
+        border-radius: 10px;
+    }
+    .caption{
+        top: 830px;
+        width: 180px;
+        height: 83px;
+    }
+}
+@media screen and (min-width: 950px) {
+    .font-size{
+        font-size: 18px;
+    }
+    .p-top-30{
+        font-size: 35px;
+    }
+    .carousel-control-prev{
+    top: 200px;
+    }
+    .carousel-control-next{
+    top: 200px;
+    }
+    .leader-img{
+        width: 180px;
+        height: 230px;
+        border-radius: 10px;
+    }
+    .caption{
+        top: 870px;
+        width: 200px;
+        height: 80px;
+    }
+}
+@media screen and (min-width: 1000px) {
+    .font-size{
+        font-size: 23px;
+        padding-top: 35px;
+    }
+    h5{
+        font-size: 20px;
+    }
+    .p-top-30{
+        font-size: 40px;
+    }
+    .carousel-control-prev{
+    top: 230px;
+    width: 70px;
+    height: 70px;
+    }
+    .carousel-control-next{
+    top: 230px;
+    width: 70px;
+    height: 70px;
+    }
+    .carousel-control-prev-icon{
+    width: 50px;
+    height: 50px;
+    }
+    .carousel-control-next-icon{
+    width: 50px;
+    height: 50px;
+    }
+    .leader-img{
+        width: 225px;
+        height: 295px;
+        border-radius: 10px;
+    }
+    .caption{
+        top: 1090px;
+        width: 250px;
+        height: 100px;
+    }
 }
